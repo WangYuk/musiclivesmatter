@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>向歌曲库增加歌曲</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static'css/user_style.css'%}" />
+
 </head>
 <body>
-<p>向歌曲库增加歌曲</p>
-<p>未完成</p>
+<div class="container">
+    <div class="info-box">
+        <div class="title-box">
+            <span>歌曲添加</span>
+        </div>
+        <form action="#" method="post">
+            <div class="txt1-box">
+                <span class="require">*</span>
+                <label for="username">歌曲名</label>
+                <div class="username-input">
+                    <input type="text" id="username" name="username" placeholder="请输入歌曲名 长度:1-20个字符" />
+                </div>
+            </div>
+
+            <div class="txt2-box">
+                <span class="require">*</span>
+                <label for="userPassword">专辑</label>
+                <div class="userPassword-input">
+                    <input type="password" id="userPassword" name="userPassword" placeholder="请输入专辑名称 长度:1-20个字符" />
+                </div>
+            </div>
+
+            <div class="txt3-box">
+                <span class="require">*</span>
+                <label for="userRePassword">歌手名称</label>
+                <div class="userRePassword-input">
+                    <input type="password" id="userRePassword" name="repeat_password" placeholder="请输入歌手名称 长度:1-20个字符" />
+                </div>
+            </div>
+
+            <div class="submit-box">
+                <input id = "submit-button" type="submit" value="添加">
+            </div>
+
+        </form>
+    </div>
+</div>
 </body>
 </html>
